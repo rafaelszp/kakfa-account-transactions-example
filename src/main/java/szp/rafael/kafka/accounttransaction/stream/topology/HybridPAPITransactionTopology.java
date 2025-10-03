@@ -111,13 +111,13 @@ public class HybridPAPITransactionTopology {
     }
 
 
-    private static JSONSerdes<AccountTransaction> getAccountTransactionSerde(){
+    public static JSONSerdes<AccountTransaction> getAccountTransactionSerde(){
         return  new SerdeFactory<AccountTransaction>().createSerde(AccountTransaction.class);
     }
-    private static JSONSerdes<AccountBalance> getAccountBalanceSerde(){
+    public static JSONSerdes<AccountBalance> getAccountBalanceSerde(){
         return  new SerdeFactory<AccountBalance>().createSerde(AccountBalance.class);
     }
-    private static JSONSerdes<ProcessedTransaction> getProcessedTransactionJSONSerdes(){
+    public static JSONSerdes<ProcessedTransaction> getProcessedTransactionJSONSerdes(){
         return  new SerdeFactory<ProcessedTransaction>().createSerde(ProcessedTransaction.class);
     }
 
